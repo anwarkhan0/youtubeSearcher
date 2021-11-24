@@ -1,4 +1,4 @@
-const GoogleAPIkey = ''
+const GoogleAPIkey = 'Your google api key goes here'
 //display all the videos
 function makeList(data) {
 
