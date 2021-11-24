@@ -1,3 +1,4 @@
+const GoogleAPIkey = ''
 //display all the videos
 function makeList(data) {
 
@@ -78,7 +79,7 @@ input.addEventListener("keyup", function(event) {
 async function searchVideo(){
     document.getElementById('videosList').innerHTML = ''
     let q = document.getElementById('query').value;
-    await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${q}&type=video&videoType=any&maxResults=50&key=AIzaSyDRl09OGFCXF4uaMPen_9ptndoIMdm_4F0`)
+    await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${q}&type=video&videoType=any&maxResults=50&key=${GoogleAPIkey}`)
     .then(response => response.json())
     .then(data => makeList(data.items) )
 }
