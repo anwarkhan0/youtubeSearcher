@@ -9,7 +9,6 @@ function makeList(data) {
         let cardTag = document.createElement("div");
         cardTag.setAttribute('class', 'video-block text-white border-0 rounded-0 col-md-3 p-1')
         cardTag.setAttribute('onclick', `watchVideo('${el.id.videoId}')`)
-        // cardTag.style.width = '18rem'
 
         let img = document.createElement("IMG")
         img.setAttribute('class', 'card-img-top rounded-0')
@@ -25,12 +24,6 @@ function makeList(data) {
         let channelTitle = document.createElement("span")
         channelTitle.setAttribute('class', 'm-2')
         channelTitle.innerHTML = el.snippet.channelTitle
-
-
-        // let watchButton = document.createElement("button")
-        // watchButton.setAttribute('class', 'btn btn-sm btn-primary')
-        // watchButton.setAttribute('onclick', `watchVideo('${el.id.videoId}')`)
-        // watchButton.innerHTML = '<i class="far fa-eye"></i> Watch'
 
         let downloadButton = document.createElement("a")
         downloadButton.setAttribute('class', 'btn btn-sm btn-info')
